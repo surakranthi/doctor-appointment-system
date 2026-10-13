@@ -1,0 +1,242 @@
+
+/* Global styling */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #f1f5f9;
+  color: #1e293b;
+  font-family: Arial, sans-serif;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+main {
+  width: 100%;
+  max-width: 850px;
+  margin: 30px auto;
+  padding: 20px;
+}
+
+/* Main title */
+header {
+  text-align: center;
+  margin-bottom: 28px;
+}
+
+h1 {
+  color: #12345a;
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+header p {
+  color: #2b548e;
+}
+
+/* Section cards */
+section {
+  background: #ffffff;
+  color: #1e293b;
+  border: 1px solid #dbe3ec;
+  border-radius: 12px;
+  padding: 22px;
+  margin-bottom: 20px;
+  box-shadow: 0 3px 10px rgba(15, 23, 42, 0.06);
+}
+
+h2 {
+  color: #12345a;
+  font-size: 21px;
+  margin-top: 0;
+  margin-bottom: 18px;
+}
+
+h3 {
+  color: #1e293b;
+}
+
+p,
+label {
+  color: #334155;
+  line-height: 1.6;
+}
+
+/* Inputs and date picker */
+input,
+select,
+textarea {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0 16px;
+  border: 1px solid #24149f;
+  border-radius: 7px;
+  background-color: #ffffff;
+  color: #1e293b;
+  font-size: 15px;
+}
+
+input[type="date"] {
+  min-height: 46px;
+  cursor: pointer;
+  color-scheme: light;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+  cursor: pointer;
+  opacity: 1;
+}
+
+/* Doctor and appointment cards */
+article {
+  background: #ffffff;
+  color: #1e293b;
+  border: 1px solid #dbe3ec;
+  border-radius: 9px;
+  padding: 18px;
+  margin: 12px 0;
+}
+
+article p {
+  margin: 6px 0;
+}
+
+/* Buttons */
+button {
+  background: #1769aa;
+  color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  padding: 11px 16px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #12538a;
+}
+
+button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* Available time slots */
+.slot-button {
+  min-width: 85px;
+  margin: 4px;
+  background: #ffffff;
+  color: #1e293b;
+  border: 1px solid #94a3b8;
+}
+
+.slot-button:hover {
+  background: #e0f2fe;
+  color: #12345a;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  color: #64748b;
+}
+
+/* Mobile screens */
+@media (max-width: 600px) {
+  main {
+    padding: 12px;
+    margin: 12px auto;
+  }
+
+  h1 {
+    font-size: 27px;
+  }
+
+  section {
+    padding: 16px;
+  }
+}
+
+
+/* FINAL DASHBOARD VISIBILITY FIX */
+body,
+#root {
+  background-color: #f1f5f9 !important;
+  color: #1e293b !important;
+}
+
+#root main {
+  max-width: 850px;
+  margin: 30px auto;
+  padding: 20px;
+  color: #1e293b !important;
+}
+
+#root main h1,
+#root main h2,
+#root main h3 {
+  color: #12345a !important;
+  opacity: 1 !important;
+}
+
+#root main p,
+#root main label {
+  color: #334155 !important;
+  opacity: 1 !important;
+}
+
+#root main section,
+#root main article {
+  background: #ffffff !important;
+  color: #1e293b !important;
+}
+
+#root main input,
+#root main select,
+#root main textarea {
+  background-color: #ffffff !important;
+  color: #1e293b !important;
+  border: 1px solid #94a3b8 !important;
+}
+
+#root main input[type="date"] {
+  min-height: 46px;
+  color-scheme: light;
+  cursor: pointer;
+}
+
+#root main input[type="date"]::-webkit-calendar-picker-indicator {
+  opacity: 1;
+  cursor: pointer;
+}
+
+#root main button {
+  color: #ffffff;
+  cursor: pointer;
+}
+
+#root main button.slot-button {
+  color: #1e293b !important;
+  background: #ffffff !important;
+  border: 1px solid #3364a8 !important;
+}
+
+#root main button.slot-button:hover {
+  background: #e0f2fe !important;
+}
+
+@media (max-width: 600px) {
+  #root main {
+    margin: 12px auto;
+    padding: 12px;
+  }
+
+  #root main h1 {
+    font-size: 28px;
+  }
+}
